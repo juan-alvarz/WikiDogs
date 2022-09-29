@@ -16,3 +16,9 @@ export interface initialStateI {
   dogsFilter: DogI[];
   dog: DogI;
 }
+export interface DogCardI {
+  name: string;
+  temperament: string | null;
+  image: string;
+}
+//export type DogCardI = Pick<DogI, "name" | "temperament" | "image">;
